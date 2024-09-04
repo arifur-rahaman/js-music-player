@@ -9,10 +9,37 @@
     />
     <title>Music Player</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container center">
-      <div class="music-player"></div>
+      <div class="music-player">
+        <nav>
+          <div class="circle shadow">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle shadow">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- <div class="circle">
+            <i class="fa-solid fa-angle-right"></i>
+          </div> -->
+        </nav>
+        <img
+          src="./media/music-thumbnail-1.avif"
+          alt="song image"
+          class="song-image shadow"
+        />
+        <h1>Coldplay</h1>
+        <p>Yellow</p>
+        <audio controls src="./media/Coldplay - Yellow.mp3"></audio>
+      </div>
     </div>
 
     <script src="/app.js"></script>
