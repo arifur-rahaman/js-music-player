@@ -5,11 +5,28 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
+/* brown and khaki color */
+/* :root {
   --bg-color: #2c3639;
   --primary-color: #a27b5c;
   --secondary-color: #3f4e4f;
   --text-color: #dcd7c9;
+} */
+
+/* Pink color */
+/* :root {
+  --bg-color: #444f5a;
+  --primary-color: #ffc8c8;
+  --secondary-color: #ff9999;
+  --text-color: #444f5a;
+} */
+
+/* light purble color */
+:root {
+  --bg-color: #f4eeff;
+  --primary-color: #a6b1e1;
+  --secondary-color: #dcd6f7;
+  --text-color: #424874;
 }
 
 /* user-defined class */
@@ -21,7 +38,7 @@
 }
 
 .shadow {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .container {
@@ -70,4 +87,42 @@ p {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: var(--text-color);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 8px solid var(--secondary-color);
+}
+
+.controls div {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background-color: var(--secondary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+  transform: scale(1.5);
+  background: var(--text-color);
+  color: var(--bg-color);
 }
