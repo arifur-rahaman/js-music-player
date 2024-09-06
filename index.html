@@ -35,16 +35,17 @@
         />
         <h1>Coldplay</h1>
         <p>Yellow</p>
-        <audio
-          controls
-          src="./media/Coldplay - Yellow.mp3"
-          type="audio/mpeg"
-        ></audio>
+        <audio controls id="song">
+          <source src="./media/Coldplay - Yellow.mp3" type="audio/mpeg" />
+        </audio>
+
         <!-- input type="range" will allow us to set progress or range and value="0" lets start from start  -->
         <input type="range" value="0" id="progress" class="shadow" />
         <div class="controls center">
           <div class="shadow"><i class="fa-solid fa-backward"></i></div>
-          <div class="shadow"><i class="fa-solid fa-play"></i></div>
+          <div class="shadow" onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctlrIcon"></i>
+          </div>
           <div class="shadow"><i class="fa-solid fa-forward"></i></div>
         </div>
       </div>
